@@ -1,0 +1,21 @@
+<div id="container" style="min-width: 310px; height: 400px; max-width: 700px; margin: 0 auto" ng-controller= 'MainCtrl'></div>
+<div>
+  <form>
+    <div class='form-group'>
+      <label>Date</label>
+      <input type='date' class='form-control' ng-model='wdate'>
+    </div>
+    <div class='form-group'>
+      <label>Name</label>
+      <select class='form-control' ng-model='person'>
+        <option value='0'>Di Wu</option>
+        <option value='1'>Yujing Zheng</option>
+        <option value='2'>Qi He</option>
+      </select>
+    </div>
+    <div class='form-group'>
+      <label>Weight</label>
+      <input type='number' class='form-control' ng-model='wweight'>
+    </div>
+    <button type='submit' class='btn btn-primary' ng-click='disbm()'>Submit</button>
+  </form>
